@@ -16,7 +16,7 @@
       <div class="card-wrapper">
          <div class="card">
             <div class="card-img">
-               <img :src="poster" :alt="author">
+               <img src="poster" alt="author">
             </div>
             <div class="card-caption">
                <h4>Title</h4>
