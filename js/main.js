@@ -12,5 +12,8 @@ const app = new Vue({
             this.albums = result.data;
          })
       }
+   },
+   created() {
+      this.getAlbums();
    }
 })
