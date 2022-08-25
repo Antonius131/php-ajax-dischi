@@ -4,5 +4,12 @@ const app = new Vue({
       albums: [
 
       ]
+   },
+   methods: {
+      getAlbums() {
+         axios.get('http://localhost:8888/php-ajax-dischi/json/controller.php')
+         .then(result => {
+         })
+      }
    }
 })
