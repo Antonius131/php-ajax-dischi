@@ -7,6 +7,25 @@
    <title>Dischi PHP</title>
 </head>
 <body>
-   
+   <header>
+      <div class="logo-container">
+         <img src="#" alt="spotify-logo">
+      </div>
+   </header>
+   <main>
+      <div class="card-wrapper">
+         <div class="card">
+            <div class="card-img">
+               <img :src="poster" :alt="author">
+            </div>
+            <div class="card-caption">
+               <h4>Title</h4>
+               <p>Author</p>
+               <p>Genre</p>
+               <p>Year</p>
+            </div>
+         </div>
+      </div>
+   </main>
 </body>
 </html>
