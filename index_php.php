@@ -18,18 +18,19 @@
    </header>
    <main>
       <div class="card-wrapper">
-         <div class="card">
-            <div class="card-img">
-               <img src="poster" alt="author">
+         <?php  foreach ($albums as $album) { ?>
+            <div class="card">
+               <div class="card-img">
+                  <img src="<?php echo $album['poster']?>" alt="<?php echo $album['author']?>">
+               </div>
+               <div class="card-caption">
+                  <h4><?php echo $album['title']?></h4>
+                  <p><?php echo $album['author']?></p>
+                  <p><?php echo $album['genre']?></p>
+                  <p><?php echo $album['year']?></p>
+               </div>
             </div>
-            <div class="card-caption">
-               <h4>Title</h4>
-               <p>Author</p>
-               <p>Genre</p>
-               <p>Year</p>
-            </div>
-         </div>
-      </div>
+         <?php } ?>
    </main>
 </body>
 </html>
