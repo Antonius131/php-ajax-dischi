@@ -20,24 +20,24 @@
       </header>
       <main>
          <div class="card-wrapper">
-            <div class="card">
+            <div class="card" v-for="album in albums">
                <div class="card-img">
-                  <img src="#" alt="img">
+                  <img :src="album.poster" :alt="album.author">
                </div>
                <div class="card-caption">
-                  <h4>Title</h4>
-                  <p>Author</p>
-                  <p>Genre</p>
-                  <p>Year</p>
+                  <h4>{{ album.title }}</h4>
+                  <p>{{album.author}}</p>
+                  <p>{{album.genre}}</p>
+                  <p>{{album.year}}</p>
                </div>
             </div>
-            <div class="titles-list">
+            <!-- <div class="titles-list">
                <ul>
                   <li v-for="album in albums">
                      {{ album.title }}
                   </li>
                </ul>
-            </div>
+            </div> -->
          </div>
       </main>
    </div>
