@@ -31,6 +31,7 @@
                </div>
             </div>
          <?php } ?>
+      </div>
    </main>
 </body>
 </html>
