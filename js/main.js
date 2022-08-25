@@ -9,6 +9,7 @@ const app = new Vue({
       getAlbums() {
          axios.get('http://localhost:8888/php-ajax-dischi/json/controller.php')
          .then(result => {
+            this.albums = result.data;
          })
       }
    }
