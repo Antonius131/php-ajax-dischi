@@ -33,9 +33,12 @@
             </div>
             <div class="titles-list">
                <ul>
-                  <li>Title</li>
+                  <li v-for="album in albums">
+                     {{ album.title }}
+                  </li>
                </ul>
             </div>
+         </div>
       </main>
    </div>
 
